@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void sort(int arr[], int L, int R)
 {
 if (L >= R)
@@ -26,6 +28,9 @@ sort (arr , L , RR);
 }
 
 int main() {
-
+int arr[] =  { 17, 14, 21, 42, 19, 0, 8, 4, 1, 5 };
+int ARR_LENGTH =  sizeof (arr) / sizeof (int);
+sort (arr , 0 , ARR_LENGTH - 1);
+int i;
+for (i=0; i < ARR_LENGTH; i++) printf ("%d\n" , arr [i] );
 }
-
